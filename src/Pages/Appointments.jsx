@@ -8,7 +8,7 @@ const Appointments = () => {
   const [date, setDate] = useState('');
   const [time, setTime] = useState('');
 
-  const form = useRef();
+  const appointmentForm = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -37,7 +37,7 @@ const Appointments = () => {
         <h2 className='text-2xl font-semibold text-center text-secondary mb-6'>
           Book Your Appointment
         </h2>
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={appointmentForm} onSubmit={sendEmail}>
           <div className='mb-4'>
             <label className='block text-gray-700 text-sm font-bold mb-2' htmlFor='name'>
               Full Name
