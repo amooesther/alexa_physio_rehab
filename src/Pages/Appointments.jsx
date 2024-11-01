@@ -17,7 +17,7 @@ const Appointments = () => {
     emailjs.sendForm(
       'service_c2117lt', 
       'template_3nmvd25',
-      form.current,
+      appointmentForm.current, 
       'fJjis2aAbJDSXIylL' 
     ).then(
       (result) => {
