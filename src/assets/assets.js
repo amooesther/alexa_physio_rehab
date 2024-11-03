@@ -5,7 +5,8 @@ import headerTwo_img from './headerTwo_img.jpg'
 import group_profiles from './group_profiles.png'
 import profile_pic from './profile_pic.png'
 import contact_image from './contact_image.png'
-import about_image from './about_image.png'
+import about_image from './about_image.jpg'
+import stroke from './stroke.jpg'
 import doctor from './doctor.png'
 import ready_img from './ready_img.jpg'
 import logo from './logo.png'
@@ -18,6 +19,7 @@ import verified_icon from './verified_icon.svg'
 import arrow_icon from './arrow_icon.svg'
 import info_icon from './info_icon.svg'
 import upload_icon from './upload_icon.png'
+import CEO_Alexa from '../assets/alexa1.jpeg'
 import stripe_logo from './stripe_logo.png'
 import location_icon from './location_icon.png'
 import razorpay_logo from './razorpay_logo.png'
@@ -42,16 +44,27 @@ import General_physician from './General_physician.svg'
 import Gynecologist from './Gynecologist.svg'
 import Neurologist from './Neurologist.svg'
 import Pediatricians from './Pediatricians.svg'
+import back_pain from './back_pain.jpg'
+import sport_injury from './sport_injury.jpg'
+import arth from './arthrittis.jpg'
+import surgical_rehab from './surgical_rehab.jpg'
+import pain from './pain.jpg'
+import neurology from './neurology.jpg'
+
+
+
+
 
 
 export const assets = {
     appointment_img,
     header_img,
-    group_profiles,
-    logo,
+    group_profiles,surgical_rehab,
+    logo,stroke,back_pain,arth,neurology,pain,
+
     chats_icon,
     verified_icon,
-    info_icon,
+    info_icon,sport_injury,
     profile_pic,
     arrow_icon,
     contact_image,
@@ -66,7 +79,7 @@ export const assets = {
     doctor,
     ready_img,
     location_icon,
-    logo2,contact
+    logo2,contact,CEO_Alexa
 }
 
 export const specialityData = [
