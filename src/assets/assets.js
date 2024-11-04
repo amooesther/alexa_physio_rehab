@@ -50,6 +50,8 @@ import arth from './arthrittis.jpg'
 import surgical_rehab from './surgical_rehab.jpg'
 import pain from './pain.jpg'
 import neurology from './neurology.jpg'
+import service_img from './service_img.jpeg'
+
 
 
 
@@ -79,7 +81,7 @@ export const assets = {
     doctor,
     ready_img,
     location_icon,
-    logo2,contact,CEO_Alexa
+    logo2,contact,CEO_Alexa,service_img
 }
 
 export const specialityData = [

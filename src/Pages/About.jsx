@@ -1,20 +1,36 @@
 import React from 'react';
 import { assets } from '../assets/assets';
+import{useNavigate} from 'react-router-dom'
 
 const AboutUs = () => {
+  const navigate=useNavigate();
   return (
     <section className="flex flex-col items-center px-6 py-12 lg:px-20 lg:py-20 bg-gradient-to-b from-blue-50 via-white to-blue-50 text-gray-800 space-y-16">
       
-      {/* Hero Section */}
-      <div className="w-full max-w-6xl flex flex-col items-center text-center lg:text-left space-y-6 px-4">
-        <img src={assets.about_image} alt="About Us" className="rounded-lg shadow-lg w-full max-w-2xl" />
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-secondary leading-tight">
+       {/* Hero Section */}
+       <div className="flex flex-col md:flex-row items-center bg-secondary rounded-lg px-6 py-10 md:px-10 lg:p-20 text-white space-y-6 md:space-y-0 md:space-x-8">
+        
+        {/* Text Content */}
+        <div className="lg:max-w-md space-y-3">
+          <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-primary leading-tight">
           Alexa Physiotherapy and Rehabilitation Clinic
-        </h1>
-        <p className="font-thin sm:text-lg md:text-xl  text-gray-600 max-w-2xl mx-auto">
+          </p>
+          <p className="text-base md:text-lg lg:text-xl font-light">
           We Restore, Maintain, and Enhance Our Patients' Mobility, Function, and Well-being.
-        </p>
+          </p>
+          <a onClick={()=>navigate('/appointment')} className='flex w-48 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></a>
+        </div>
+
+        {/* Image Section */}
+        <div className="flex-shrink-0 mt-6 md:mt-0">
+          <img 
+            src={assets.header_img} 
+            alt="Service Introduction" 
+            className="w-full md:w-72 lg:w-80 h-auto rounded-lg object-cover shadow-lg"
+          />
+        </div>
       </div>
+    
 
       {/* CEO Section */}
       <div className="w-full max-w-5xl bg-white rounded-lg shadow-lg p-10 lg:flex lg:items-center lg:space-x-8 transition-transform transform hover:scale-105 duration-300 ease-in-out">

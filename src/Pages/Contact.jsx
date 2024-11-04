@@ -47,6 +47,8 @@ const Contact = () => {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col items-center p-4 md:p-10 lg:p-16">
       <h2 className="text-3xl md:text-4xl font-semibold text-gray-800 mb-8 text-center">Leave us a message</h2>
+      <span className='text-secondary'>Or call us on</span>
+      <span className='p-4 text-secondary'>  +234 803 732 9880</span>
       
       <div className="w-full max-w-2xl bg-white shadow-lg rounded-lg p-6 sm:p-8 lg:p-12">
         <form ref={form} onSubmit={handleSubmit} className="space-y-6">
