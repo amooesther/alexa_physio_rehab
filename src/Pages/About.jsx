@@ -18,7 +18,7 @@ const AboutUs = () => {
           <p className="text-base md:text-lg lg:text-xl font-light">
           We Restore, Maintain, and Enhance Our Patients' Mobility, Function, and Well-being.
           </p>
-         <Link to='/appointment'> <a className='flex w-48 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></a></Link>
+         <Link to='/appointment'> <p className='flex w-48 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></p></Link>
         </div>
 
         {/* Image Section */}

@@ -1,5 +1,6 @@
 import React, { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { useAppointments } from '../Contexts/AppointmentContext'; // Import the context
 
 const Appointments = () => {
   const [name, setName] = useState('');
@@ -9,11 +10,11 @@ const Appointments = () => {
   const [time, setTime] = useState('');
 
   const appointmentForm = useRef();
+  const { addAppointment } = useAppointments(); // Get the addAppointment function
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // Use emailjs to send the form data
     emailjs.sendForm(
       'service_c2117lt', 
       'template_3nmvd25',
@@ -22,6 +23,26 @@ const Appointments = () => {
     ).then(
       (result) => {
         console.log('SUCCESS!', result.text);
+        
+        // Create an appointment object
+        const appointment = {
+          name,
+          email,
+          phone,
+          date,
+          time,
+        };
+
+        // Add the appointment to context
+        addAppointment(appointment);
+
+        // Reset form fields
+        setName('');
+        setEmail('');
+        setPhone('');
+        setDate('');
+        setTime('');
+
         alert('Appointment booked successfully!');
       },
       (error) => {

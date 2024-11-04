@@ -16,13 +16,13 @@ const HeroTwo = () => {
         <p className='text-base md:text-lg lg:text-xl  font-light leading-relaxed max-w-full md:max-w-[80%]'>
           We are dedicated to delivering outstanding physiotherapy treatment in a warm and supportive environment. Our approach focuses on treating the whole person, not just addressing the symptoms.
         </p>
-        <Link to='/services'><a 
+        <Link to='/services'><p 
           className='flex items-center gap-2 bg-primary text-secondary px-8 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' 
           href=""
         >
           Learn More 
           <img className='w-3' src={assets.arrow_icon} alt="" />
-        </a></Link>
+        </p></Link>
       </div>
     </div>
   )

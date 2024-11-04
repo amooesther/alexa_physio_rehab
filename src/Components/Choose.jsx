@@ -29,9 +29,9 @@ const Choose = () => {
   <p className='text-base md:text-lg lg:text-xl text-white font-light'>
     Schedule your consultation today!
   </p>
-  <Link to='/appointment'><a className='flex items-center gap-2 bg-primary text-secondary px-8 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">
+  <Link to='/appointment'><p className='flex items-center gap-2 bg-primary text-secondary px-8 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">
     Book Appointment <img className='w-3' src={assets.arrow_icon} alt="Arrow icon" />
-  </a></Link>
+  </p></Link>
 </div>
 
 
