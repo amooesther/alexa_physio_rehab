@@ -1,9 +1,9 @@
 import React from 'react'
 import { assets } from '../assets/assets'
-import{useNavigate} from 'react-router-dom'
+import{Link} from 'react-router-dom'
 
 const Choose = () => {
-  const navigate=useNavigate();
+  
   return (
     <div className='flex flex-col items-center  rounded-lg px-6 md:px-10 lg:px-20 py-16 gap-8'>
       <div className='flex flex-col md:flex-row items-center md:items-start text-center md:text-left gap-8 w-full'>
@@ -29,9 +29,9 @@ const Choose = () => {
   <p className='text-base md:text-lg lg:text-xl text-white font-light'>
     Schedule your consultation today!
   </p>
-  <a onClick={()=>navigate('/appointment')} className='flex items-center gap-2 bg-primary text-secondary px-8 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">
+  <Link to='/appointment'><a className='flex items-center gap-2 bg-primary text-secondary px-8 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">
     Book Appointment <img className='w-3' src={assets.arrow_icon} alt="Arrow icon" />
-  </a>
+  </a></Link>
 </div>
 
 

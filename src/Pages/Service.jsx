@@ -1,9 +1,9 @@
 import React from 'react';
 import { assets } from '../assets/assets';
-import{useNavigate} from 'react-router-dom'
+import{Link} from 'react-router-dom'
 
 const Service = () => {
-  const navigate=useNavigate();
+ 
   return (
     <section className="flex flex-col items-center px-6 py-12 lg:px-20 lg:py-20 bg-gradient-to-b from-blue-50 via-white to-blue-50 text-gray-800 space-y-10 lg:space-y-20"> 
   
@@ -18,7 +18,7 @@ const Service = () => {
           <p className="text-base md:text-lg lg:text-xl font-light">
             We are the best at what we do
           </p>
-          <a onClick={()=>navigate('/appointment')} className='flex w-48 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></a>
+        <Link to='/appointment'><a className='flex w-48 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></a></Link>  
         </div>
 
         {/* Image Section */}
