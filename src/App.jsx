@@ -11,6 +11,7 @@ import MyAppointments from './Pages/MyAppointments.jsx';
 import Navbar from './Components/Navbar.jsx';
 import Footer from './Components/Footer.jsx';
 import { AppointmentProvider } from './Contexts/AppointmentContext.jsx';
+import Payment from './Pages/Payment.jsx';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path='/services' element={<Service />} />
           <Route path='/appointment' element={<Appointments />} />
           <Route path='/my-appointment' element={<MyAppointments />} />
+          <Route path='/payment' element={<Payment />} />
         </Routes>
       </AppointmentProvider>
       <Footer />

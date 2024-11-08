@@ -1,7 +1,6 @@
-// MyAppointments.js
 import React from 'react';
 import { useAppointments } from '../Contexts/AppointmentContext';
-
+import { Link } from 'react-router-dom';
 const MyAppointments = () => {
   const { appointments } = useAppointments();
 
@@ -26,7 +25,18 @@ const MyAppointments = () => {
             ))}
           </ul>
         )}
+
+        {/* Payment Button */}
+        {appointments.length > 0 && (
+          <div className="mt-5">
+          <Link to='/payment'> <button className="w-full bg-secondary text-white px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300">
+              Proceed to Payment
+            </button></Link> 
+          </div>
+        )}
       </div>
+
+     
     </div>
   );
 };
