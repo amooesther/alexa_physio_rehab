@@ -9,16 +9,16 @@ const AboutUs = () => {
       
        {/* Hero Section */}
        <div className="flex flex-col md:flex-row items-center bg-secondary rounded-lg px-6 py-10 md:px-10 lg:p-20 text-white space-y-6 md:space-y-0 md:space-x-8">
-        
+
         {/* Text Content */}
         <div className="lg:max-w-md space-y-3">
-          <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-primary leading-tight">
+          <p className="text-3xl md:text-4xl lg:text-4xl font-semibold text-primary leading-tight">
           Alexa Physiotherapy and Rehabilitation Clinic
           </p>
           <p className="text-base md:text-lg lg:text-xl font-light">
           We Restore, Maintain, and Enhance Our Patients' Mobility, Function, and Well-being.
           </p>
-         <Link to='/appointment'> <p className='flex w-48 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></p></Link>
+         <Link to='/appointment'> <p className='flex w-48 mt-10 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></p></Link>
         </div>
 
         {/* Image Section */}

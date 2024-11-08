@@ -51,6 +51,7 @@ import surgical_rehab from './surgical_rehab.jpg'
 import pain from './pain.jpg'
 import neurology from './neurology.jpg'
 import service_img from './service_img.jpeg'
+import upload_area from './upload_area.png'
 
 
 
@@ -81,7 +82,7 @@ export const assets = {
     doctor,
     ready_img,
     location_icon,
-    logo2,contact,CEO_Alexa,service_img
+    logo2,contact,CEO_Alexa,service_img,upload_area
 }
 
 export const specialityData = [

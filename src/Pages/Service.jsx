@@ -12,13 +12,13 @@ const Service = () => {
         
         {/* Text Content */}
         <div className="lg:max-w-md space-y-3">
-          <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-primary leading-tight">
+          <p className="text-3xl md:text-4xl lg:text-4xl font-semibold text-primary leading-tight">
             We are not your usual physiotherapy clinic
           </p>
           <p className="text-base md:text-lg lg:text-xl font-light">
             We are the best at what we do
           </p>
-        <Link to='/appointment'><p className='flex w-48 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></p></Link>  
+        <Link to='/appointment'><p className='flex w-48 mt-10 items-center gap-2 bg-primary text-secondary px-4 py-3 rounded-full text-sm hover:scale-105 transition-all duration-300' href="">Book Appointment <img className='w-3' src={assets.arrow_icon} alt="" /></p></Link>  
         </div>
 
         {/* Image Section */}

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <div className="flex flex-col md:flex-row items-center bg-secondary rounded-lg px-6 py-10 md:px-10 lg:p-20 text-white space-y-6 md:space-y-0 md:space-x-8">
+    <div className="w-full max-w-full flex flex-col md:flex-row items-center  bg-secondary rounded-lg px-6 py-10 md:px-10 lg:p-20 text-white space-y-6 md:space-y-0 md:space-x-8">
       {/* Text Content */}
       <div className="lg:max-w-md space-y-3">
         <p className="text-3xl md:text-4xl lg:text-5xl font-semibold text-primary leading-tight">
@@ -25,7 +25,7 @@ const Hero = () => {
         <img 
           src={assets.about_image} 
           alt="Service Introduction" 
-          className="w-full md:w-72 lg:w-80 h-auto rounded-lg object-cover shadow-lg"
+          className="w-full md:w-72 lg:w-96 h-auto rounded-lg object-cover shadow-lg"
         />
       </div>
     </div>
