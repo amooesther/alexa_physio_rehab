@@ -90,6 +90,12 @@ const Navbar = () => {
         <NavLink to='/my-appointment' onClick={() => setShowMenu(false)}>
           <li className='py-1 text-secondary'>My Appointments</li>
         </NavLink>
+        <NavLink to='/profile' onClick={() => setShowMenu(false)}>
+          <li className='py-1 text-secondary'>My Profile</li>
+        </NavLink>
+        <NavLink  onClick={() => setShowMenu(false)}>
+          <li onClick={handleLogout} className='py-1 text-secondary'></li>
+        </NavLink>
       </ul>
     </div>
   );

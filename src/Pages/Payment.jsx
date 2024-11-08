@@ -8,6 +8,7 @@ const Payment = () => {
     expirationDate: '',
     cvv: '',
   });
+  const [amount,setAmount]=useState(15000)
 
   const handleChange = (e) => {
     const { name, value } = e.target;
