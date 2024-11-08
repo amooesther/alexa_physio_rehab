@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Payment = () => {
   const [paymentDetails, setPaymentDetails] = useState({
@@ -28,6 +29,26 @@ const Payment = () => {
         <h2 className="text-3xl font-semibold text-center text-primary mb-6">
           Payment Information
         </h2>
+
+        <p className="text-sm font-bold text-center text-green-500 mt-4 mb-4">
+          15,000 Naira for Assessment and Registration
+        </p>
+
+        {/* Payment Amount (Read-only field for the amount) */}
+        <div className="mb-4">
+          <label htmlFor="paymentAmount" className="block text-sm font-medium text-gray-700">
+            Payment Amount
+          </label>
+          <input
+            type="text"
+            id="paymentAmount"
+            name="paymentAmount"
+            value="15,000"
+            readOnly
+            className="w-full p-3 border border-gray-300 rounded-md bg-gray-100 text-gray-700 focus:outline-none focus:ring-2 focus:ring-green-500"
+          />
+        </div>
+
         <form onSubmit={handleSubmit}>
           {/* Card Number */}
           <div className="mb-4">
@@ -94,12 +115,14 @@ const Payment = () => {
           </div>
 
           {/* Submit Button */}
-          <button
-            type="submit"
-            className="w-full bg-green-500 text-white py-3 rounded-md text-sm font-semibold hover:bg-green-600 transition-all duration-300 mt-6"
-          >
-            Pay Now
-          </button>
+          <Link to="/payment-success">
+            <button
+              type="submit"
+              className="w-full bg-green-500 text-white py-3 rounded-md text-sm font-semibold hover:bg-green-600 transition-all duration-300 mt-6"
+            >
+              Pay Now
+            </button>
+          </Link>
         </form>
       </div>
     </div>
