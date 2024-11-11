@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { assets } from '../assets/assets';
-import { Link, useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { auth } from '../Contexts/firebase';
 import { onAuthStateChanged, signOut } from 'firebase/auth';
 
@@ -44,23 +44,22 @@ const Navbar = () => {
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-primary'>
       <img className='cursor-pointer' src={assets.logo} alt="Logo" />
 
-      
       <ul className='hidden md:flex items-start gap-5 font-medium'>
-        <Link to="/" onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>Home</li>
-        </Link>
-        <Link to="/about" onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>About</li>
-        </Link>
-        <Link to='/services' onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>Services</li>
-        </Link>
-        <Link to='/contact' onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>Contact</li>
-        </Link>
-        <Link to='/my-appointment' onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>My Appointments</li>
-        </Link>
+        <NavLink to="/" onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          Home
+        </NavLink>
+        <NavLink to="/about" onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          About
+        </NavLink>
+        <NavLink to='/services' onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          Services
+        </NavLink>
+        <NavLink to='/contact' onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          Contact
+        </NavLink>
+        <NavLink to='/my-appointment' onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          My Appointments
+        </NavLink>
       </ul>
 
       <div className='flex items-center gap-4'>
@@ -92,32 +91,32 @@ const Navbar = () => {
 
       {/* Navbar links for smaller screens */}
       <ul className={`flex-col md:hidden items-start gap-5 font-medium absolute ${showMenu ? 'flex' : 'hidden'} top-16 left-0 w-full bg-white p-4`}>
-        <Link to="/" onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>Home</li>
-        </Link>
-        <Link to="/about" onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>About</li>
-        </Link>
-        <Link to='/services' onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>Services</li>
-        </Link>
-        <Link to='/contact' onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>Contact</li>
-        </Link>
-        <Link to='/my-appointment' onClick={() => setShowMenu(false)}>
-          <li className='py-1 text-secondary'>My Appointments</li>
-        </Link>
+        <NavLink to="/" onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          Home
+        </NavLink>
+        <NavLink to="/about" onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          About
+        </NavLink>
+        <NavLink to='/services' onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          Services
+        </NavLink>
+        <NavLink to='/contact' onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          Contact
+        </NavLink>
+        <NavLink to='/my-appointment' onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+          My Appointments
+        </NavLink>
         {user ? (
           <>
-            <Link to='/profile' onClick={() => setShowMenu(false)}>
-              <li className='py-1 text-secondary'>My Profile</li>
-            </Link>
+            <NavLink to='/profile' onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+              My Profile
+            </NavLink>
             <p onClick={() => { handleLogout(); setShowMenu(false); }} className='py-1 text-secondary cursor-pointer'>Logout</p>
           </>
         ) : (
-          <Link to='/login' onClick={() => setShowMenu(false)}>
-            <li className='py-1 text-secondary'>Sign in</li>
-          </Link>
+          <NavLink to='/login' onClick={() => setShowMenu(false)} className={({ isActive }) => (isActive ? 'py-1 text-primary' : 'py-1 text-secondary')}>
+            Sign in
+          </NavLink>
         )}
       </ul>
     </div>
