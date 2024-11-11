@@ -21,6 +21,7 @@ const Hero = () => {
       </div>
 
       {/* Image Section */}
+     
       <div className="flex-shrink-0 mt-6 md:mt-0">
         <img 
           src={assets.about_image} 

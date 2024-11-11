@@ -4,13 +4,15 @@ import HeroTwo from '../Components/HeroTwo'
 import Choose from '../Components/Choose'
 import Testimonial from '../Components/Testimonial'
 
+
 const Home = () => {
   return (
     <div>
       <Hero/>
       <HeroTwo/>
       <Choose/>
-      <Testimonial/>
+      <Testimonial/> 
+    
     </div>
   )
 }
