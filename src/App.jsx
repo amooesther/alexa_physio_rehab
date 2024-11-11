@@ -39,7 +39,7 @@ const App = () => {
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 p-2 rounded-full hover:scale-105 transition-transform"
       >
-        <img className="w-20 h-20" src={assets.chats_icon} alt="Chat Icon" />
+        <img className="w-20 h-15" src={assets.chats_icon} alt="Chat Icon" />
       </a>
       <Footer />
     </div>
