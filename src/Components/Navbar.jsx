@@ -44,7 +44,7 @@ const Navbar = () => {
     <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-primary'>
       <img className='cursor-pointer' src={assets.logo} alt="Logo" />
 
-      {/* Navbar links for medium and larger screens */}
+      
       <ul className='hidden md:flex items-start gap-5 font-medium'>
         <Link to="/" onClick={() => setShowMenu(false)}>
           <li className='py-1 text-secondary'>Home</li>
