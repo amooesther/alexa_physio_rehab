@@ -9,7 +9,7 @@ import logo from './logo.png';
 import logo2 from './logo2.png';
 import dropdown_icon from './dropdown_icon.svg';
 import menu_icon from './menu_icon.svg';
-import chats_icon from './whatsapp_icon.jpg';
+import chats_icon from './whatsapp_icon.png';
 import arrow_icon from './arrow_icon.svg';
 import CEO_Alexa from './alexa1.jpeg'; 
 import location_icon from './location_icon.png';
