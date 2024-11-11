@@ -1,8 +1,6 @@
 import header_img from './header_img.jpg'
-import contact from './contact.jpg'
 import headerTwo_img from './headerTwo_img.jpg'
 import profile_pic from './profile_pic.png'
-import contact_image from './contact_image.png'
 import about_image from './about_image.jpg'
 import stroke from './stroke.jpg'
 import doctor from './doctor.png'
@@ -40,13 +38,12 @@ export const assets = {
     sport_injury,
     profile_pic,
     arrow_icon,
-    contact_image,
     about_image,
     menu_icon,    
     dropdown_icon, 
     headerTwo_img,    
     ready_img,
     location_icon,
-    logo2,contact,CEO_Alexa,service_img,upload_area
+    logo2,CEO_Alexa,service_img,upload_area
 }
 
