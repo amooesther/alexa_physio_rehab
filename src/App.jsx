@@ -34,7 +34,7 @@ const App = () => {
         </Routes>
       </AppointmentProvider>
       <a
-        href="https://wa.link/ccax9c"
+        href="https://wa.link/8zvxq3"
         target="_blank"
         rel="noopener noreferrer"
         className="fixed bottom-4 right-4 p-2 rounded-full hover:scale-105 transition-transform"
